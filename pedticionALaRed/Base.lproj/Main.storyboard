@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ejemplo: 978-84-376-0494-7" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1lV-lX-QGP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ejemplo: 978-84-376-0494-7" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1lV-lX-QGP">
                                 <rect key="frame" x="20" y="186" width="374" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="-3" y="39" width="422" height="86"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="ZJM-AX-m3r"/>
+                                    <constraint firstAttribute="height" constant="86" id="64M-wW-rxc"/>
                                 </constraints>
                                 <string key="text">LA MEJOR APP DEL  MUNDO
 PARA BUSCAR LIBROS</string>
@@ -46,9 +46,9 @@ PARA BUSCAR LIBROS</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-Iq-hYX">
-                                <rect key="frame" x="332" y="186" width="51" height="30"/>
+                                <rect key="frame" x="179" y="148" width="82" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Limpiar"/>
+                                <state key="normal" title="Borrar Todo"/>
                                 <connections>
                                     <action selector="limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2e-eg-SO8"/>
                                 </connections>
@@ -57,18 +57,18 @@ PARA BUSCAR LIBROS</string>
                         <animations/>
                         <color key="backgroundColor" red="0.92063254117965698" green="0.94866698980331421" blue="0.97776788473129272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1lV-lX-QGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3zu-wx-ja9"/>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="4tP-UG-PQw"/>
-                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="leading" secondItem="1lV-lX-QGP" secondAttribute="trailing" constant="-62" id="CUu-pc-ixe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="leg-H8-tWZ" secondAttribute="bottom" constant="13" id="F7k-Xj-ED8"/>
-                            <constraint firstItem="1lV-lX-QGP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gdc-Fp-NsJ"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="top" secondItem="1lV-lX-QGP" secondAttribute="bottom" constant="21" id="RTK-f2-9qy"/>
-                            <constraint firstItem="1lV-lX-QGP" firstAttribute="top" secondItem="6Fs-u4-Pgl" secondAttribute="bottom" constant="61" id="Rrt-8l-FLC"/>
-                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="top" secondItem="1lV-lX-QGP" secondAttribute="top" id="VVt-re-pzv"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nps-FN-l3W"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="leading" secondItem="1lV-lX-QGP" secondAttribute="leading" id="o2R-cl-0x3"/>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="xgr-dl-HF7"/>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="zda-KD-fM2"/>
+                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="BUH-HK-f6z"/>
+                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="EV3-VA-ZKc"/>
+                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="top" secondItem="6Fs-u4-Pgl" secondAttribute="bottom" constant="23" id="F3K-gJ-kdQ"/>
+                            <constraint firstItem="1lV-lX-QGP" firstAttribute="top" secondItem="xVe-Iq-hYX" secondAttribute="bottom" constant="8" symbolic="YES" id="IrP-2t-Pd5"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="leading" secondItem="1lV-lX-QGP" secondAttribute="leading" id="LMG-Lq-GsX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="leg-H8-tWZ" secondAttribute="bottom" constant="13" id="TpV-21-zAj"/>
+                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="ZpG-SB-taU"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bPe-iK-ley"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="top" secondItem="1lV-lX-QGP" secondAttribute="bottom" constant="21" id="g5R-HZ-YN9"/>
+                            <constraint firstItem="1lV-lX-QGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwh-Fz-BcV"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2R-ec-GLX"/>
+                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="13" id="skt-p8-mu7"/>
                         </constraints>
                         <connections>
                             <action selector="deseparecerTeclado:" destination="BYZ-38-t0r" eventType="touchDown" id="156-5G-elY"/>
