@@ -1,4 +1,4 @@
-// xxxxx
+// xx
 //  ViewController.swift
 //  pedticionALaRed
 //
