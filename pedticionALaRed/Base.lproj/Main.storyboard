@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,57 +19,136 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ejemplo: 978-84-376-0494-7" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1lV-lX-QGP">
-                                <rect key="frame" x="20" y="186" width="374" height="30"/>
+                                <rect key="frame" x="21" y="141" width="374" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="COe-5S-eMR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
                                 <connections>
                                     <action selector="serchTextField:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="uEE-KT-bEo"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-u4-Pgl">
+                                <rect key="frame" x="48" y="39" width="320" height="56"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5No-8g-PiM"/>
+                                </constraints>
+                                <string key="text">LA MEJOR APP DEL MUNDO
+PARA BUSCAR LIBROS</string>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-Iq-hYX">
+                                <rect key="frame" x="312" y="103" width="82" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HVp-Kw-bzo"/>
+                                    <constraint firstAttribute="width" constant="82" id="P4t-nx-YiF"/>
+                                </constraints>
+                                <state key="normal" title="Borrar Todo"/>
+                                <connections>
+                                    <action selector="limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2e-eg-SO8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-1N-cbw">
+                                <rect key="frame" x="21" y="179" width="48" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YVs-iG-lLB"/>
+                                    <constraint firstAttribute="width" constant="48" id="k62-Sq-eq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avm-UW-e47">
+                                <rect key="frame" x="21" y="208" width="47" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1C3-8p-wbQ"/>
+                                    <constraint firstAttribute="width" constant="47" id="QD9-Cm-aCf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-At-M0R">
+                                <rect key="frame" x="108" y="179" width="286" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-aK-B4o">
+                                <rect key="frame" x="108" y="208" width="286" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="leg-H8-tWZ">
-                                <rect key="frame" x="20" y="237" width="374" height="486"/>
+                                <rect key="frame" x="20" y="407" width="374" height="309"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-u4-Pgl">
-                                <rect key="frame" x="-3" y="39" width="422" height="86"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wct-pW-kVT">
+                                <rect key="frame" x="132" y="237" width="151" height="162"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="64M-wW-rxc"/>
+                                    <constraint firstAttribute="width" constant="151" id="31N-JG-Ktp"/>
+                                    <constraint firstAttribute="height" constant="162" id="ALU-OX-YvP"/>
                                 </constraints>
-                                <string key="text">LA MEJOR APP DEL  MUNDO
-PARA BUSCAR LIBROS</string>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="39"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-Iq-hYX">
-                                <rect key="frame" x="179" y="148" width="82" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI8-ih-Pqr">
+                                <rect key="frame" x="20" y="103" width="176" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Borrar Todo"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2wW-FZ-Kxt"/>
+                                    <constraint firstAttribute="width" constant="176" id="ZxO-JT-hvi"/>
+                                </constraints>
+                                <state key="normal" title="Ejemplo libro con Portada"/>
                                 <connections>
-                                    <action selector="limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2e-eg-SO8"/>
+                                    <action selector="copiarNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlJ-AU-5bh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.92063254117965698" green="0.94866698980331421" blue="0.97776788473129272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="BUH-HK-f6z"/>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="EV3-VA-ZKc"/>
-                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="top" secondItem="6Fs-u4-Pgl" secondAttribute="bottom" constant="23" id="F3K-gJ-kdQ"/>
-                            <constraint firstItem="1lV-lX-QGP" firstAttribute="top" secondItem="xVe-Iq-hYX" secondAttribute="bottom" constant="8" symbolic="YES" id="IrP-2t-Pd5"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="leading" secondItem="1lV-lX-QGP" secondAttribute="leading" id="LMG-Lq-GsX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="leg-H8-tWZ" secondAttribute="bottom" constant="13" id="TpV-21-zAj"/>
-                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="ZpG-SB-taU"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bPe-iK-ley"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="top" secondItem="1lV-lX-QGP" secondAttribute="bottom" constant="21" id="g5R-HZ-YN9"/>
-                            <constraint firstItem="1lV-lX-QGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwh-Fz-BcV"/>
-                            <constraint firstItem="leg-H8-tWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2R-ec-GLX"/>
-                            <constraint firstItem="xVe-Iq-hYX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="13" id="skt-p8-mu7"/>
+                            <constraint firstItem="qI8-ih-Pqr" firstAttribute="top" secondItem="6Fs-u4-Pgl" secondAttribute="bottom" constant="8" symbolic="YES" id="47c-XH-CYD"/>
+                            <constraint firstItem="uEi-1N-cbw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="4lt-jO-D9a"/>
+                            <constraint firstItem="avm-UW-e47" firstAttribute="baseline" secondItem="5aA-aK-B4o" secondAttribute="baseline" id="61g-un-qbj"/>
+                            <constraint firstItem="1lV-lX-QGP" firstAttribute="top" secondItem="qI8-ih-Pqr" secondAttribute="bottom" constant="8" symbolic="YES" id="7tL-RJ-ye8"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="top" secondItem="wct-pW-kVT" secondAttribute="bottom" constant="8" symbolic="YES" id="92A-G4-G3q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="leg-H8-tWZ" secondAttribute="leading" id="9CV-5N-U6N"/>
+                            <constraint firstItem="5aA-aK-B4o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="44" id="DMm-A3-FxC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xVe-Iq-hYX" secondAttribute="trailing" id="Ecm-s1-ey4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qI8-ih-Pqr" secondAttribute="leading" id="Hfw-Ig-uYo"/>
+                            <constraint firstItem="avm-UW-e47" firstAttribute="top" secondItem="uEi-1N-cbw" secondAttribute="bottom" constant="8" symbolic="YES" id="Igi-sl-ih3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5aA-aK-B4o" secondAttribute="trailing" id="LLo-zZ-2nN"/>
+                            <constraint firstItem="wct-pW-kVT" firstAttribute="top" secondItem="5aA-aK-B4o" secondAttribute="bottom" constant="8" symbolic="YES" id="LvD-Qw-HLp"/>
+                            <constraint firstItem="JzH-At-M0R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="44" id="RAA-CY-pSV"/>
+                            <constraint firstItem="avm-UW-e47" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="UXA-jK-ZjL"/>
+                            <constraint firstAttribute="bottom" secondItem="leg-H8-tWZ" secondAttribute="bottom" constant="20" symbolic="YES" id="X0w-lQ-58Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1lV-lX-QGP" secondAttribute="trailing" constant="-1" id="ZIf-ZJ-ps8"/>
+                            <constraint firstItem="leg-H8-tWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aI1-6f-BE7"/>
+                            <constraint firstItem="5aA-aK-B4o" firstAttribute="firstBaseline" secondItem="avm-UW-e47" secondAttribute="firstBaseline" id="aeM-de-z80"/>
+                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="dMh-RL-E03"/>
+                            <constraint firstItem="qI8-ih-Pqr" firstAttribute="baseline" secondItem="xVe-Iq-hYX" secondAttribute="baseline" id="edM-nm-YTz"/>
+                            <constraint firstItem="1lV-lX-QGP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="hn8-lC-IFY"/>
+                            <constraint firstItem="wct-pW-kVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0d-PK-ZiX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="leg-H8-tWZ" secondAttribute="trailing" id="nlq-er-xSz"/>
+                            <constraint firstItem="6Fs-u4-Pgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPx-Nj-lWX"/>
+                            <constraint firstItem="JzH-At-M0R" firstAttribute="firstBaseline" secondItem="uEi-1N-cbw" secondAttribute="firstBaseline" id="tl7-yT-W3f"/>
+                            <constraint firstItem="uEi-1N-cbw" firstAttribute="top" secondItem="1lV-lX-QGP" secondAttribute="bottom" constant="8" symbolic="YES" id="tyG-im-XH6"/>
+                            <constraint firstItem="JzH-At-M0R" firstAttribute="baseline" secondItem="uEi-1N-cbw" secondAttribute="baseline" id="uR3-21-JXz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JzH-At-M0R" secondAttribute="trailing" id="xm0-tK-tfX"/>
                         </constraints>
                         <connections>
                             <action selector="deseparecerTeclado:" destination="BYZ-38-t0r" eventType="touchDown" id="156-5G-elY"/>
@@ -76,6 +156,9 @@ PARA BUSCAR LIBROS</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="lbAutor" destination="5aA-aK-B4o" id="rFx-zz-Nrj"/>
+                        <outlet property="lbtitulo" destination="JzH-At-M0R" id="wbq-Ga-pyC"/>
+                        <outlet property="portada" destination="wct-pW-kVT" id="09z-JK-el6"/>
                         <outlet property="tftexto" destination="1lV-lX-QGP" id="Jql-4X-Rhc"/>
                         <outlet property="tvPantalla" destination="leg-H8-tWZ" id="k9q-8R-M0i"/>
                     </connections>
